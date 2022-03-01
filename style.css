@@ -5,7 +5,7 @@
     --white: #FFF;
     --bg-blue: #f8f9fa;
     --red: #dc3545;
-    --grey: #6c757d;
+    --shadow: rgba(128, 128, 128, 0.5);
 }
 body{
     font-family: 'Poppins', sans-serif;
@@ -13,4 +13,47 @@ body{
     padding: 0;
     box-sizing: border-box;
     background-color: var(--bg-blue);
+}
+.container{
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 20px;
+    max-width: 1000px;
+    height: 600px;
+    margin: 50px auto;
+    box-shadow: 0.5px 0.5px 30px var(--shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container .main-title h1{
+    font-size: 5em;
+    margin: 0;
+    padding-left: 100px;
+}
+.container .main-title h1 span{
+    color: var(--red);
+}
+.container .sub-title p{
+    padding-left: 100px;
+    margin: 0;
+    font-size: 1.2em;
+}
+.container .button{
+    padding-left: 100px;
+    margin: 40px 0 0 0;
+}
+.container .button a{
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--red);
+    font-size: 1.2em;
+    padding: 10px 30px;
+    border-radius: 25px;
+    margin-right: 30px;
+}
+.container .button a:hover{
+    background-color: var(--white);
+    color: var(--red);
+    transition: all 0.5s ease;
 }
