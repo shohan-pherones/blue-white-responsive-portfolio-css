@@ -141,3 +141,28 @@ body{
     background-color: var(--blue);
     transition: all 0.5s ease;
 }
+.counter{
+    height: 250px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.counter .counter-holder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.counter-holder .icon i{
+    font-size: 2em;
+    background-color: var(--red);
+    border-radius: 50%;
+    padding: 15px;
+    margin: 0;
+}
+.counter-holder .number h1{
+    font-size: 2em;
+    margin: 0;
+}
+.counter-holder .text p{
+    margin: 0;
+}
